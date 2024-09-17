@@ -26,8 +26,7 @@
                 ?>" alt="">
                 <p><?php
                     echo($produto['nome_produto']);?></p>
-                <input type="hidden" name="idproduto" value=<?php echo($produto['id_produto'])?>
-<img src="" alt="" srcset="">
+                <input type="hidden" name="idproduto" value=<?php echo($produto['id_produto'])?>>
         </form>
         <?php
             }
