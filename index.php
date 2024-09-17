@@ -20,7 +20,7 @@
             $resultado->execute();
             while($produto=$resultado->fetch()){
         ?>
-        <form action="tratar.php" method="POST">
+        <form action="tratar_produto.php" method="POST">
                 <img src="<?php
                     echo($produto['imagem_produto']);
                 ?>" alt="">
