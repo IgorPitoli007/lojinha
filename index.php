@@ -20,14 +20,12 @@
             $resultado->execute();
             while($produto=$resultado->fecth()){
         ?>
-        <form action="tratar.php" method="POST">
+        <form action="tratar-produto.php" method="POST">
                 <img src="<?php
                     echo($produto['imagem_produto']);
                 ?>" alt="">
-                <p><?php
-                    echo($produto['nome_produto']);?></p>
-                <input type="hidden" name="idproduto" value=<?php echo($produto['id_produto'])?>
-<img src="" alt="" srcset="">
+                <p><?php echo($produto['nome_produto']);?></p>
+                <input type="hidden" name="idproduto" value=<?php echo($produto['id_produto'])?>>
         </form>
         <?php
             }
