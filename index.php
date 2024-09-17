@@ -18,7 +18,7 @@
             $query="select * from produto";
             $resultado=Mysql::conectar()->prepare($query);
             $resultado->execute();
-            while($produto=$resultado->fecth()){
+            while($produto=$resultado->fetch()){
         ?>
         <form action="tratar.php" method="POST">
                 <img src="<?php
